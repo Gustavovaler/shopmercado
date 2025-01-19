@@ -19,7 +19,7 @@ class ProductController extends Controller
     public function checkout(Request $request)
     {
         MercadoPagoConfig::setAccessToken('APP_USR-8013625678437650-011812-f50e9eb540bdb9b2f8e14d3ce4a614c9-1807710409');
-        MercadoPagoConfig::setIntegratorId('24c65fb163bf11ea96500242ac130004');
+        MercadoPagoConfig::setIntegratorId('dev_24c65fb163bf11ea96500242ac130004');
         $sale = Product::find($request->input('product_id'));
 
         $client = new PreferenceClient();
