@@ -13,3 +13,5 @@ Route::group(['prefix' => '/back_urls'], function(){
     Route::post('/pending' , [BackUrlsController::class , 'pending']);
     Route::post('/failure' , [BackUrlsController::class , 'failure']);
 });
+
+Route::post('/webhooks' , [BackUrlsController::class , 'webhooks']);

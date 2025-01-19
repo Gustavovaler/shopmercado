@@ -40,4 +40,15 @@ class BackUrlsController extends Controller
         return response('ok');
     }
 
+    public function webhooks(Request $request){
+        try {
+            if ($request->payment_id) {
+                MlResponse::create(['payment_id' => $request->payment_id]);
+            }
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+        return response('ok');
+    }
+
 }
