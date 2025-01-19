@@ -32,9 +32,9 @@ class ProductController extends Controller
             )
             ),
         "back_urls"=> [
-            "success" =>  "http://stockapp.store/back_urls/success",
-            "pending" =>  "http://stockapp.store/back_urls/pending",
-            "failure" =>  "http://stockapp.store/back_urls/failure"
+            "success" =>  "https://stockapp.store/back_urls/success",
+            "pending" =>  "https://stockapp.store/back_urls/pending",
+            "failure" =>  "https://stockapp.store/back_urls/failure"
         ],
         "external_reference" => "1643827245",
         
