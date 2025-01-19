@@ -15,3 +15,4 @@ Route::group(['prefix' => '/back_urls'], function(){
 });
 
 Route::post('/webhooks' , [BackUrlsController::class , 'webhooks']);
+Route::post('/notifications', [BackUrlsController::class , 'webhooks']);
