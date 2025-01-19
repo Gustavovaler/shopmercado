@@ -46,7 +46,8 @@ class ProductController extends Controller
                 "failure" =>  "https://stockapp.store/back_urls/failure"
             ],
             "external_reference" => "245453",
-            "notification_url"   => "http://stockapp.store/api/notifications"
+            "notification_url"   => "http://stockapp.store/api/notifications",
+            "integrator_id"     => '24c65fb163bf11ea96500242ac130004'
 
         ]);
         return view('products.checkout', compact('sale', 'preference'));

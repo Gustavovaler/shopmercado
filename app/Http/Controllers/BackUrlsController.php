@@ -51,7 +51,7 @@ class BackUrlsController extends Controller
                 case "payment":
                     $payment = new PaymentClient();
                     //$payment_resp = $payment->get($request->data["id"]); //99765051718
-                    $payment_resp = $payment->get(99766165644); //99765051718
+                    $payment_resp = $payment->get(99767294680); //99765051718
                     var_dump(json_encode($payment_resp));
                     MlResponse::create(['payment_id' => $payment_resp->id]);
                     
