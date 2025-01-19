@@ -29,6 +29,7 @@ class ProductController extends Controller
             "quantity" => 1,
             "unit_price" => $sale->price,
             "currency_id" => "ARS",
+            'description' => $sale->description
             )
             ),
         "back_urls"=> [
@@ -36,7 +37,7 @@ class ProductController extends Controller
             "pending" =>  "https://stockapp.store/back_urls/pending",
             "failure" =>  "https://stockapp.store/back_urls/failure"
         ],
-        "external_reference" => "1643827245",
+        "external_reference" => "1643827245453",
         
         ]);
         return view('products.checkout', compact('sale', 'preference'));

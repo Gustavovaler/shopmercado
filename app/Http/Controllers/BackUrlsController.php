@@ -50,8 +50,11 @@ class BackUrlsController extends Controller
             switch($request->type) {
                 case "payment":
                     $payment = new PaymentClient();
-                    $payment = $payment->get($request->data["id"]);
-                    MlResponse::create(['payment_id' => $request->payment_id]);
+                    //$payment_resp = $payment->get($request->data["id"]); //99765051718
+                    $payment_resp = $payment->get(99400023425); //99765051718
+                    var_dump(json_encode($payment_resp));
+                    MlResponse::create(['payment_id' => $payment_resp->id]);
+                    
                     break;
  }
         } catch (\Throwable $th) {
